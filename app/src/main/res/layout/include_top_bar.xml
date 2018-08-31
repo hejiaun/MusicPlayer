@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                style="@style/iconClickStyle"
+                android:onClick="click"
+                android:src="@mipmap/ic_menu" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tv_localMusic"
+                    style="@style/textStyle"
+                    android:onClick="click"
+                    android:text="我的音乐"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_onlineMusic"
+                    style="@style/textStyle"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="click"
+                    android:text="在线音乐"
+                    android:textColor="@color/translucent_white" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_search"
+                style="@style/iconClickStyle"
+                android:layout_alignParentRight="true"
+                android:onClick="click"
+                android:src="@mipmap/ic_menu_search" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>

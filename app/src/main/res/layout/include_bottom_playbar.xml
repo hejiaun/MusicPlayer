@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lv_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/ripple_black"
+    android:clickable="true"
+    android:onClick="click"
+    android:orientation="vertical"
+    android:translationZ="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv_songFace"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/default_cover" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/tv_songName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/tv_singer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:onClick="click"
+            android:id="@+id/iv_musicStatus"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="1px"
+            android:background="@drawable/ripple_black"
+            android:clickable="true"
+            android:src="@mipmap/ic_play_bar_btn_play" />
+
+        <ImageView
+            android:onClick="click"
+            android:id="@+id/iv_musicNext"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ripple_black"
+            android:clickable="true"
+            android:src="@mipmap/ic_play_bar_btn_next" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_playing"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:progressDrawable="@drawable/progress_bar_style" />
+</LinearLayout>

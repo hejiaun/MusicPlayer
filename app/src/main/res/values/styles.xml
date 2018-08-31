@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+    <style name="AppTheme.Search" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="iconClickStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ripple_white</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!--tab-->
+    <style name="textStyle" parent="iconClickStyle">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="dialog_more_item">
+        <item name="android:clickable">true</item>
+        <item name="android:paddingLeft">23dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/ripple_black</item>
+
+    </style>
+
+
+    <style name="dialog_search" parent="@style/Theme.AppCompat.DayNight.Dialog.Alert">
+    </style>
+
+    <style name="item_songList">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+</resources>

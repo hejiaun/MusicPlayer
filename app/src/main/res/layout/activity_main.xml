@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/fl_main"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/dl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_top_bar" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/grey"></android.support.v4.view.ViewPager>
+
+            <include
+                layout="@layout/include_bottom_playbar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            app:insetForeground="#00000000"
+            app:itemBackground="@drawable/ripple_black"
+            app:itemIconTint="@color/red"
+            app:itemTextColor="@color/black"
+            app:menu="@menu/menu_nav"></android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+
+</FrameLayout>

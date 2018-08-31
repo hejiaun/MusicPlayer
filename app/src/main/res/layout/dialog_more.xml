@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/tv_share"
+        android:text="分享"
+        style="@style/dialog_more_item" />
+
+    <TextView
+        android:id="@+id/tv_ring"
+        android:text="设为铃声"
+        style="@style/dialog_more_item" />
+    <TextView
+        android:id="@+id/tv_songInfo"
+        android:text="查看歌曲信息"
+        style="@style/dialog_more_item" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:text="删除"
+        style="@style/dialog_more_item" />
+
+
+</LinearLayout>

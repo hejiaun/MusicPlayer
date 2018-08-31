@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuItem_timer"
+        android:icon="@mipmap/ic_menu_timer"
+        android:title="定时停止播放" />
+
+    <item
+        android:id="@+id/menuItem_mode"
+        android:icon="@mipmap/ic_menu_night"
+        android:title="夜间模式" />
+
+    <item
+        android:id="@+id/menuItem_setting"
+        android:icon="@mipmap/ic_menu_settings"
+        android:title="功能设置" />
+
+    <item
+        android:id="@+id/menuItem_about"
+        android:icon="@mipmap/ic_menu_about"
+        android:title="关于应用" />
+    <item
+        android:id="@+id/menuItem_exit"
+        android:icon="@mipmap/ic_menu_exit"
+        android:title="退出应用" />
+
+</menu>
